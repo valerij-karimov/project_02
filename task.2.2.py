@@ -22,26 +22,28 @@ a = {
     11 : 'ноябрь',
     12 : 'декабрь',
 }
+b = a.get(mons)
 
-b = a[mons]
 
 one = [1 , 2 , 3]
 two = [4 , 5 , 6]
 three = [7 , 8 , 9]
 fo = [10 , 11 , 12]
 
-while mons in one:
+if mons in one and mons <= len(a):
     print(f' вы ввели {mons} месяц {b} он является частью первого квартала')
-    break
-while mons in two:
+    
+if mons in two and mons <= len(a):
     print(f' вы ввели {mons} месяц {b} он является частью второго квартала')
-    break
-while mons in three:
+    
+if mons in three and mons <= len(a):
     print(f' вы ввели {mons} месяц {b} он является частью третьего квартала')
-    break
-while mons in fo:
+    
+if mons in fo and mons <= len(a):
     print(f' вы ввели {mons} месяц {b} он является частью четвертого квартала')
-    break
+    
+else:
+    print('нет такого месяца')
 
     
 
